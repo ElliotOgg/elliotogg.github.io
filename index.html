@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <title>Hello, AMPs</title>
+    <title>Elliot Ogg</title>
     <link rel="canonical" href="http://example.ampproject.org/article-metadata.html">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <script type="application/ld+json">
       {
         "@context": "http://schema.org",
-        "@type": "NewsArticle",
+        "@type": "Portfolio",
         "headline": "Open-source framework for publishing content",
         "datePublished": "2015-10-07T12:02:41Z",
         "image": [
@@ -17,9 +17,152 @@
         ]
       }
     </script>
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <style amp-custom>
+		.content {
+			max-width: 70%;
+			margin: auto;
+		}
+		.content-section {
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
+		.entry {
+			padding-top: 5px;
+			padding-bottom: 5px;
+			font-weight: 400;
+			color: rgba(0,0,0,.7);
+		}
+		.sub-title {
+			font-weight: 500;
+			color: rgba(0,0,0,.9);
+		}
+		.title {
+			font-size: 20px;
+			font-weight: bold;
+		}
+		.job-title {
+			font-size: 18px;
+			font-weight: lighter;
+		}
+		.external-links {
+			font-size: 16px;
+			font-weight: lighter;
+		}
+		body {
+			font-family: 'Nunito Sans', sans-serif;
+		}
+		body::before {
+			content: "";
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 350px;
+			background-image: url('bhambg.jpg');
+			background-position: top;
+			background-size: cover;
+		}
+
+		header {
+			z-index: 0;
+			position: relative;
+		}
+		header .content {
+			height: 350px;
+			position: relative;
+		}
+		header .title {
+			position: absolute;
+			bottom: 15px;
+			left: 0;
+			color: #fff;
+		}
+		header::before {
+			content: '';
+			display: block;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			top: 50%;
+			background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+*/
+		}
+
+		section {
+			position: relative;
+			z-index: 2;
+			background-color: #fff;
+		}
+	</style>
   </head>
   <body>
-    <h1>Welcome to the mobile web</h1>
+  	<header>
+  		<div class='content'>
+	    	<div class="title">
+	    		<div> Elliot Ogg </div>
+	    		<div class="job-title"> Engineering Team Lead, Conversica</div>
+	    		<div class='external-links'>
+		    		<a href="https://www.linkedin.com/in/elliot-ogg-bb460132/">LinkedIn</a>
+		    		<a href="mailto:elliotogg@gmail.com">Email</a>
+		    	</div>
+	    	</div>
+  		</div>
+    </header>
+    <section>
+    	<div class='content'>
+		    <div class='content-section'>
+		    	<div class='content-subsection'>
+		    		<h4>Primary Technologies/Services</h4>
+		    		<div class='entry'>
+ 						<div>MySQL</div>
+		    			<div>PHP</div>
+		    			<div>Amazon Web Services</div>
+		    			<div>Yii</div>
+		    			<div>Burp Suite</div>
+		    			<div>Postfix/DBmail</div>
+		    			<div>PhantomJS</div>
+		    			<div>Ubuntu Server</div>
+		    		</div>
+		    	</div>
+		    	<div class='content-subsection'>
+		    		<h4>Career</h4>
+		    		<div>
+		    			<div class='entry'>
+		    				<div class='sub-title'>Engineering Team Lead</div>
+		    				<div>Conversica</div>
+		    				<div>June 2017 - Present</div>
+		    			</div>
+		    			<div class='entry'>
+		    				<div class='sub-title'>SDE II</div>
+		    				<div>Conversica</div>
+		    				<div>June 2015 - June 2017</div>
+		    			</div>
+		    			<div class='entry'>
+		    				<div class='sub-title'>SDE I</div>
+		    				<div>Conversica</div>
+		    				<div>June 2012 - June 2015</div>
+		    			</div>
+		    			<div class='entry'>
+		    				<div class='sub-title'>Internship</div>
+		    				<div>Conversica</div>
+		    				<div>May 2012 - June 2012</div>
+		    			</div>
+		    		</div>
+		    	</div>
+		    	<div class='content-subsection'>
+		    		<h4>Education</h4>
+		    		<div class='entry'>
+						<div class='sub-title'>Western Washington University</div>
+    					<div>Bachelor of Science (B.S.), Electronics Engineering Technology</div>
+    					<div>2008-2013</div>
+		    		</div>
+		    	</div>
+		    </div>
+		</div>
+    </section>
   </body>
 </html>
