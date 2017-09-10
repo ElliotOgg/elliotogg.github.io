@@ -68,8 +68,21 @@
 		header .title {
 			position: absolute;
 			bottom: 0;
+			left: 125px;
+			color: #fff;
+		}
+		header .profile {
+			position: absolute;
+			bottom: 5px;
 			left: 0;
 			color: #fff;
+			border-radius: 50%;
+			overflow: hidden;
+			height: 115px;
+		}
+		header .profile  img{
+			height: 100%;
+			margin: 0 0 -10px 0px;
 		}
 		header::before {
 			content: '';
@@ -127,6 +140,9 @@
   <body>
   	<header>
   		<div class='content'>
+  			<div class="profile">
+  				<amp-img layout="fixed" height="115" width="115" src="images/profile.jpg">
+  			</div>
 	    	<div class="title">
 	    		<div> Elliot Ogg </div>
 	    		<div class="job-title"> Engineering Team Lead, Conversica</div>
