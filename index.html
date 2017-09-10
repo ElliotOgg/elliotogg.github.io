@@ -19,6 +19,7 @@
     </script>
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
     <style amp-custom>
 		.content {
 			max-width: 70%;
@@ -52,6 +53,7 @@
 		}
 		body {
 			font-family: 'Nunito Sans', sans-serif;
+			color: #444;
 		}
 		body::before {
 			content: "";
@@ -97,6 +99,37 @@
 			z-index: 2;
 			background-color: #fff;
 		}
+		#email-icon {
+			height: 20px;
+		}
+		#linkedin-icon {
+			height: 22px;
+		}
+		.external-links {
+			padding-top: 2px;
+		}
+		.entry.badges {
+			display: flex;
+			justify-content: space-between;
+		}
+		.badge {
+			width: 140px;
+			height: 65px;
+			border-radius: 5px;
+			text-align: center;
+			padding: 10px;
+			box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+			flex-grow: 1;
+			margin: 5px;
+			font-size: 13px;
+    		font-weight: bold;
+		}
+		.logo img, .slides img {
+			object-fit: contain;
+		}
+		.amp-carousel-button {
+			display: none;
+		}
 	</style>
   </head>
   <body>
@@ -106,8 +139,12 @@
 	    		<div> Elliot Ogg </div>
 	    		<div class="job-title"> Engineering Team Lead, Conversica</div>
 	    		<div class='external-links'>
-		    		<a href="https://www.linkedin.com/in/elliot-ogg-bb460132/">LinkedIn</a>
-		    		<a href="mailto:elliotogg@gmail.com">Email</a>
+		    		<a href="https://www.linkedin.com/in/elliot-ogg-bb460132/">
+		    			<img id= "linkedin-icon" src="images/linkedin.png" alt='LinkedIn'>
+		    		</a>
+		    		<a href="mailto:elliotogg@gmail.com">
+		    			<img id="email-icon" src="images/email.png" alt="Email">
+		    		</a>
 		    	</div>
 	    	</div>
   		</div>
@@ -117,15 +154,122 @@
 		    <div class='content-section'>
 		    	<div class='content-subsection'>
 		    		<h4>Primary Technologies/Services</h4>
-		    		<div class='entry'>
- 						<div>MySQL</div>
-		    			<div>PHP</div>
-		    			<div>Amazon Web Services</div>
-		    			<div>Yii</div>
-		    			<div>Burp Suite</div>
-		    			<div>Postfix/DBmail</div>
-		    			<div>PhantomJS</div>
-		    			<div>Ubuntu Server</div>
+		    		<div class='entry badges'>
+ 						<div class="badge">
+ 							<div><amp-img layout="fixed" height="40" width="62" class="logo" src="images/logo-mysql.png"></div>
+ 							<span>MySQL</span>
+ 						</div>
+ 						<div class="badge">
+ 							<div><amp-img layout="fixed" height="40" width="62" class="logo" src="images/elephpant.png"></div>
+ 							<span>PHP</span>
+ 						</div>
+ 						<div class="badge">
+ 						<!-- 	<div><amp-img layout="fixed" height="40" width="62" class="logo" src="images/aws/General_AWScloud.png"></div> -->
+ 							<amp-carousel width="140"
+								height="150"
+								layout="fixed"
+								type="slides"
+								autoplay
+								delay="2000">
+								<div class="slides">
+									<amp-img src="images/aws/General_AWScloud.png"
+									width="62"
+									height="40"
+									layout="fixed">
+									</amp-img>
+									<div>Amazon Web Services</div>
+								</div>
+								<div class="slides">
+									<amp-img src="images/aws/AI_AmazonLex.png"
+									width="62"
+									height="40"
+									layout="fixed">
+									</amp-img>
+									<div>Lex</div>
+								</div>
+								<div class="slides">
+									<amp-img src="images/aws/Analytics_AmazonES.png"
+									width="62"
+									height="40"
+									layout="fixed">
+									</amp-img>
+									<div>Elastic Search</div>
+								</div>
+								<div class="slides">
+									<amp-img src="images/aws/Compute_AmazonEC2.png"
+									width="62"
+									height="40"
+									layout="fixed">
+									</amp-img>
+									<div>EC2</div>
+								</div>
+								<div class="slides">
+									<amp-img src="images/aws/Database_AmazonDynamoDB.png"
+									width="62"
+									height="40"
+									layout="fixed">
+									</amp-img>
+									<div>DynamoDB</div>
+								</div>
+								<div class="slides">
+									<amp-img src="images/aws/Database_AmazonRDS.png"
+									width="62"
+									height="40"
+									layout="fixed">
+									</amp-img>
+									<div>RDS</div>
+								</div>
+								<div class="slides">
+									<amp-img src="images/aws/Messaging_AmazonSES.png"
+									width="62"
+									height="40"
+									layout="fixed">
+									</amp-img>
+									<div>SES</div>
+								</div>
+								<div class="slides">
+									<amp-img src="images/aws/Messaging_AmazonSNS.png"
+									width="62"
+									height="40"
+									layout="fixed">
+									</amp-img>
+									<div>SNS</div>
+								</div>
+								<div class="slides">
+									<amp-img src="images/aws/Messaging_AmazonSQS.png"
+									width="62"
+									height="40"
+									layout="fixed">
+									</amp-img>
+									<div>SQS</div>
+								</div>
+								<div class="slides">
+									<amp-img src="images/aws/Storage_AmazonS3.png"
+									width="62"
+									height="40"
+									layout="fixed">
+									</amp-img>
+									<div>S3</div>
+								</div>
+							</amp-carousel>
+ 						</div>
+ 						<div class="badge">
+ 							<div><amp-img layout="fixed" height="40" width="62" class="logo" src="images/yii.png"></div>
+ 							<span>Yii</span>
+ 						</div>
+ 						<div class="badge">
+ 							<div><amp-img layout="fixed" height="40" width="62" class="logo" src="images/burpsuite.png"></div>
+ 							<span>Burp Suite</span>
+ 						</div>
+ 						<div class="badge">
+ 							<div><amp-img layout="fixed" height="40" width="62" class="logo" src="images/phantomjs-icon.png"></div>
+ 							<span>PhantomJS</span>
+ 						</div>
+ 						<div class="badge">
+ 							<div><amp-img layout="fixed" height="40" width="62" class="logo" src="images/ubuntu-server.ico"></div>
+ 							<span>Ubuntu Server</span>
+ 						</div>
+		    			<!-- <div class="badge">Postfix/DBmail</div> -->
 		    		</div>
 		    	</div>
 		    	<div class='content-subsection'>
